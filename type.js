@@ -1,5 +1,5 @@
 //
-// Type creation system (class system)
+// Type creation system (prototypal inheritance system)
 //
 
 
