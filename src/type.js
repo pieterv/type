@@ -38,6 +38,20 @@
 	//
 	type = function( obj ) {
 
+		var base;
+		
+		// Constructor function
+		base = function() {
+			var name = options[ 'constructor_name' ];
+
+			if ( typeof this[ name ] === 'function' ) {
+				this[ name ].apply( this, arguments );
+			}
+		};
+
+		base.prototype = obj;
+
+		return base;
 	};
 
 	// Export item
