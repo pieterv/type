@@ -1,4 +1,4 @@
-var type = require( '../src/type' ),
+var type = require( '../type' ),
 
 	// Buster setup
 	buster = require( 'buster' ),

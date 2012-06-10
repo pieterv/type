@@ -25,7 +25,7 @@
 	"devDependencies": {
 		"buster": "~0.5"
 	},
-	"main": "./src/type",
+	"main": "./type",
 	"directories": {
 		"test": "test"
 	},
