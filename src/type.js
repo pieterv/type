@@ -39,6 +39,8 @@
 	type = function( obj ) {
 
 		var base;
+
+		obj = obj || {};
 		
 		// Constructor function
 		base = function() {
@@ -54,7 +56,7 @@
 		// Create new class inheriting from this class
 		base.extend = function( protoProps ) {
 			var ctor = function() {},
-				child = type( {} ),
+				child = type(),
 				name;
 
 			// Copy over properties
