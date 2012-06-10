@@ -19,7 +19,9 @@
 		define( [ 'module' ], factory );
 	} else {
 		// Browser globals
-		factory( ( root[ PROJECT_NAME ] = {} ) );
+		var mod = { exports: {} };
+		factory( mod );
+		root[ PROJECT_NAME ] = mod.exports;
 	}
 
 } )( this, function( module ) {
