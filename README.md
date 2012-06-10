@@ -46,8 +46,8 @@ var Foo = type( { foo: 'bar' } );
 
 // Returns a newable object
 
-var foo1 = new Foo( options );
-var foo2 = new Foo( options );
+var foo1 = new Foo();
+var foo2 = new Foo();
 ```
 
 **constructor / initialize function**
@@ -56,14 +56,11 @@ As with backbone.js if the object has a function called **initialize** it will b
 
 ```javascript
 var Foo = type( {
-	
 	initialize: function( options ) {
-
-		if ( options.bar ) {
+		if ( options && options.bar ) {
 			this._bar = options.bar;
 		}
 	}
-
 } );
 
 var foo1 = new Foo( { bar: 10 } );
