@@ -11,18 +11,18 @@
 	// Set global name
 	var PROJECT_NAME = 'type';
 
-	if ( typeof exports === 'object' ) {
+	if ( typeof module === 'object' ) {
 		// CommonJS
-		factory( exports );
+		factory( module );
 	} else if ( typeof define === 'function' && define.amd ) {
 		// AMD. Register as an anonymous module.
-		define( [ 'exports' ], factory );
+		define( [ 'module' ], factory );
 	} else {
 		// Browser globals
 		factory( ( root[ PROJECT_NAME ] = {} ) );
 	}
 
-} )( this, function( exports ) {
+} )( this, function( module ) {
 
 
 	//
@@ -77,5 +77,5 @@
 	};
 
 	// Export item
-	exports = type;
+	module.exports = type;
 } );
