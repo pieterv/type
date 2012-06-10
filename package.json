@@ -1,0 +1,35 @@
+{
+	"name": "type",
+	"version": "0.1.0",
+	"description": "",
+	"keywords": [ "type", "class", "prototypal" ],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/pieter-vanderwerff/type"
+		}
+	],
+	"bugs": "https://github.com/pieter-vanderwerff/type/issues",
+	"maintainers": [
+		{
+			"name": "Pieter Vanderwerff",
+			"web": "http://pieter.io"
+		}
+	],
+	"devDependencies": {
+		"buster": "~0.5"
+	},
+	"main": "./src/type",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "buster test -e node"
+	}
+}
