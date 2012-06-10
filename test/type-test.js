@@ -1,14 +1,16 @@
-var type = require( '../type' ),
+( function( buster, type ) {
 
-	// Buster setup
-	buster = require( 'buster' ),
-	expect = buster.assertions.expect;
-
+// Buster setup
+var expect = buster.assertions.expect;
 buster.spec.expose();
 
+//
+// Tests
+//
 describe( 'Type', function() {
 
 	it( 'basic state', function() {
+		console.log( type );
 		expect( type ).toBeDefined();
 		expect( type ).toBeFunction();
 		expect( type() ).toBeFunction();
@@ -83,3 +85,8 @@ describe( 'Type', function() {
 		expect( bar1.bob ).toBeObject();
 	} );
 } );
+
+} )(
+	this.buster || require('buster'),
+	this.type   || require('..')
+);
