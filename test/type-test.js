@@ -10,7 +10,6 @@ buster.spec.expose();
 describe( 'Type', function() {
 
 	it( 'basic state', function() {
-		console.log( type );
 		expect( type ).toBeDefined();
 		expect( type ).toBeFunction();
 		expect( type() ).toBeFunction();
