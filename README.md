@@ -1,3 +1,102 @@
-# Type creation system
+[![Build Status](https://secure.travis-ci.org/pieter-vanderwerff/type.png)](http://travis-ci.org/pieter-vanderwerff/type)
 
-In development
+A lightweight prototypal inheritance implementation based on backbone.js.
+
+----
+
+Quick Start
+===========
+
+### AMD
+
+1. `git clone https://github.com/pieter-vanderwerff/type` or `git submodule add https://github.com/pieter-vanderwerff/type`
+1. Configure your loader with a package:
+
+	```javascript
+	packages: [
+		{ name: 'type', location: 'path/to/type/', main: 'type' },
+		// ... other packages ...
+	]
+	```
+
+1. `define(['type', ...], function(type, ...) { ... });` or `require(['type', ...], function(type, ...) { ... });`
+
+### Script Tag
+
+1. `git clone https://github.com/pieter-vanderwerff/type` or `git submodule add https://github.com/pieter-vanderwerff/type`
+1. `<script src="path/to/type/type.js"></script>`
+1. `type` will be available as `window.type`
+
+### Node
+
+1. `npm install git://github.com/pieter-vanderwerff/type` (**NOTE:** npm seems to require a url that starts with "git" rather than http or https)
+1. `var type = require('type');`
+
+
+API
+===
+
+type()
+------
+
+Create a type object:
+
+```javascript
+var Foo = type( { foo: 'bar' } );
+
+// Returns a newable object
+
+var foo1 = new Foo( options );
+var foo2 = new Foo( options );
+```
+
+**constructor / initialize function**
+
+As with backbone.js if the object has a function called **initialize** it will be run on the creation of an instance, receiving any arguments passed to the type.
+
+```javascript
+var Foo = type( {
+	
+	initialize: function( options ) {
+
+		if ( options.bar ) {
+			this._bar = options.bar;
+		}
+	}
+
+} );
+
+var foo1 = new Foo( { bar: 10 } );
+var foo2 = new Foo( { bar: 17 } );
+```
+
+type().extend()
+------------
+
+Extend a type object:
+
+```javascript
+var Foo = type( { foo: 10 } );
+
+var Foostream = Foo.extend( { foo: 10000000, bar: 17 } );
+
+var foo1 = new Foo();
+var foo2 = new Foostream();
+```
+
+Running the Unit Tests
+======================
+
+Install [buster.js](http://busterjs.org/)
+
+`npm install -g buster`
+
+Run unit tests in Node:
+
+1. `buster test -e node`
+
+Run unit tests in Browsers (and Node):
+
+1. `buster server` - this will print a url
+2. Point browsers at <buster server url>/capture, e.g. `localhost:1111/capture`
+3. `buster test` or `buster test -e browser`
