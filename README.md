@@ -45,7 +45,6 @@ Create a type object:
 var Foo = type( { foo: 'bar' } );
 
 // Returns a newable object
-
 var foo1 = new Foo();
 var foo2 = new Foo();
 ```
@@ -57,12 +56,13 @@ As with backbone.js if the object has a function called **initialize** it will b
 ```javascript
 var Foo = type( {
 	initialize: function( options ) {
-		if ( options && options.bar ) {
-			this._bar = options.bar;
-		}
+
+		this._bar = options.bar;
+
 	}
 } );
 
+// Create instances passing options to the initialize function
 var foo1 = new Foo( { bar: 10 } );
 var foo2 = new Foo( { bar: 17 } );
 ```
@@ -75,8 +75,10 @@ Extend a type object:
 ```javascript
 var Foo = type( { foo: 10 } );
 
+// Extend Foo
 var Foostream = Foo.extend( { foo: 10000000, bar: 17 } );
 
+// Create instances of both types
 var foo1 = new Foo();
 var foo2 = new Foostream();
 ```
