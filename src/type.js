@@ -51,6 +51,26 @@
 
 		base.prototype = obj;
 
+		// Create new class inheriting from this class
+		base.extend = function( protoProps ) {
+			var ctor = function() {},
+				child = type( {} ),
+				name;
+
+			// Copy over properties
+			ctor.prototype = base.prototype;
+			child.prototype = new ctor();
+
+			// Set properties
+			for ( name in protoProps ) {
+				if ( protoProps.hasOwnProperty( name ) ) {
+					child.prototype[ name ] = protoProps[ name ];
+				}
+			}
+
+			return child;
+		};
+
 		return base;
 	};
 
