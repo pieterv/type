@@ -1,6 +1,14 @@
-//
-// Type creation system (prototypal inheritance system)
-//
+/** @license MIT License (c) copyright Pieter Vanderwerff */
+
+/**
+ * type
+ * Type creation system (prototypal inheritance system)
+ *
+ * Licensed under the MIT License at:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * @version 0.1.0
+ */
 
 
 //
