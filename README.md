@@ -1,6 +1,8 @@
+#Type
+
 [![Build Status](https://secure.travis-ci.org/pieter-vanderwerff/type.png)](http://travis-ci.org/pieter-vanderwerff/type)
 
-A lightweight prototypal inheritance implementation based on backbone.js.
+A Type creation system using a lightweight prototypal inheritance implementation based on [backbone.js](http://backbonejs.org/).
 
 ----
 

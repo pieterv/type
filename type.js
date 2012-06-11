@@ -2,7 +2,7 @@
 
 /**
  * type
- * Type creation system (prototypal inheritance system)
+ * Type creation system (prototypal inheritance)
  *
  * Licensed under the MIT License at:
  * http://www.opensource.org/licenses/mit-license.php

@@ -1,7 +1,7 @@
 {
-	"name": "type",
+	"name": "type-proto",
 	"version": "0.1.0",
-	"description": "",
+	"description": "Type creation system (prototypal inheritance)",
 	"keywords": [ "type", "class", "prototypal" ],
 	"licenses": [
 		{
