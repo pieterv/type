@@ -38,10 +38,10 @@
 	//
 	// Project Code
 	//
-	var options = {}, type;
+	var type;
 
 	// Setup options
-	options[ 'constructor_name' ] = 'initialize';
+	CONSTRUCTOR_NAME = 'initialize';
 
 	//
 	// Type creator
@@ -54,10 +54,8 @@
 		
 		// Constructor function
 		base = function() {
-			var name = options[ 'constructor_name' ];
-
-			if ( typeof this[ name ] === 'function' ) {
-				this[ name ].apply( this, arguments );
+			if ( typeof this[ CONSTRUCTOR_NAME ] === 'function' ) {
+				this[ CONSTRUCTOR_NAME ].apply( this, arguments );
 			}
 		};
 
