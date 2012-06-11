@@ -23,7 +23,7 @@
 		}
 	],
 	"devDependencies": {
-		"buster": "~0.5"
+		"buster": "~0.4"
 	},
 	"main": "./type",
 	"directories": {
