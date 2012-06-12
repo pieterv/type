@@ -31,8 +31,8 @@ Quick Start
 
 ### Node
 
-1. `npm install git://github.com/pieter-vanderwerff/type` (**NOTE:** npm seems to require a url that starts with "git" rather than http or https)
-1. `var type = require('type');`
+1. `npm install type-proto`
+1. `var type = require('type-proto');`
 
 
 API

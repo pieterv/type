@@ -15,7 +15,11 @@
 			"url": "https://github.com/pieter-vanderwerff/type"
 		}
 	],
-	"bugs": "https://github.com/pieter-vanderwerff/type/issues",
+	"bugs": [
+		{
+			"url": "https://github.com/pieter-vanderwerff/type/issues"
+		}
+	],
 	"maintainers": [
 		{
 			"name": "Pieter Vanderwerff",
