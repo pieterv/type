@@ -9,6 +9,11 @@ A Type creation system using a lightweight prototypal inheritance implementation
 Quick Start
 ===========
 
+### JAM
+
+1. `jam install typejs`
+1. `var type = require('typejs');`
+
 ### AMD
 
 1. `git clone https://github.com/pieter-vanderwerff/type` or `git submodule add https://github.com/pieter-vanderwerff/type`
