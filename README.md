@@ -1,4 +1,4 @@
-#Type
+#Type (typejs)
 
 [![Build Status](https://secure.travis-ci.org/pieter-vanderwerff/type.png)](http://travis-ci.org/pieter-vanderwerff/type)
 
@@ -16,23 +16,23 @@ Quick Start
 
 	```javascript
 	packages: [
-		{ name: 'type', location: 'path/to/type/', main: 'type' },
+		{ name: 'typejs', location: 'path/to/type/', main: 'type' },
 		// ... other packages ...
 	]
 	```
 
-1. `define(['type', ...], function(type, ...) { ... });` or `require(['type', ...], function(type, ...) { ... });`
+1. `define(['typejs', ...], function(type, ...) { ... });` or `require(['typejs', ...], function(type, ...) { ... });`
 
 ### Script Tag
 
 1. `git clone https://github.com/pieter-vanderwerff/type` or `git submodule add https://github.com/pieter-vanderwerff/type`
 1. `<script src="path/to/type/type.js"></script>`
-1. `type` will be available as `window.type`
+1. `type` will be available as `window.typejs`
 
 ### Node
 
-1. `npm install type-proto`
-1. `var type = require('type-proto');`
+1. `npm install typejs`
+1. `var type = require('typejs');`
 
 
 API

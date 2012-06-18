@@ -1,7 +1,7 @@
 /** @license MIT License (c) copyright Pieter Vanderwerff */
 
 /**
- * type
+ * typejs
  * Type creation system (prototypal inheritance)
  *
  * Licensed under the MIT License at:
@@ -17,7 +17,7 @@
 ( function( root, factory ) {
 
 	// Set global name
-	var PROJECT_NAME = 'type';
+	var PROJECT_NAME = 'typejs';
 
 	if ( typeof module === 'object' ) {
 		// CommonJS

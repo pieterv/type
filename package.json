@@ -1,8 +1,8 @@
 {
-	"name": "type-proto",
+	"name": "typejs",
 	"version": "0.1.0",
 	"description": "Type creation system (prototypal inheritance)",
-	"keywords": [ "type", "class", "prototypal" ],
+	"keywords": [ "type", "typejs", "class", "prototypal" ],
 	"licenses": [
 		{
 			"type": "MIT",

@@ -87,5 +87,5 @@ describe( 'Type', function() {
 
 } )(
 	this.buster || require('buster'),
-	this.type   || require('..')
+	this.typejs || require('..')
 );
