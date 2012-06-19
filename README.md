@@ -12,7 +12,8 @@ Quick Start
 ### JAM
 
 1. `jam install typejs`
-1. `var type = require('typejs');`
+1. [Jam](http://groundcomputing.co.uk/code/jam) sets up your packages config for you, just make sure its been included `<script src="jam/require.js"></script>` or `<script src="jam/require.config.js"></script>`
+1. `define(['typejs', ...], function(type, ...) { ... });` or `require(['typejs', ...], function(type, ...) { ... });`
 
 ### AMD
 
